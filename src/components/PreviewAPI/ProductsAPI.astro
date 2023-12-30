@@ -1,0 +1,19 @@
+---
+import type { Product } from '@models/index';
+const API = 'https://fake-store-api-409620.rj.r.appspot.com/api/products/all?size=10';
+const response = await fetch(API);
+const responseData = await response.json();
+const data = responseData.content.map((item: Product) => ({
+    ...item,
+    imageUrl: item.imageUrl
+}));
+---
+<div class='grid grid-5 not-content'>
+  {data.map((item: Product) => (
+      <article>
+          <img loading="lazy" src={item.imageUrl} alt={item.name} />
+          <p>${item.price}</p>
+          <h4>{item.name}</h4>
+      </article>
+  ))}
+</div>

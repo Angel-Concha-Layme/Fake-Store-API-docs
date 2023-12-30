@@ -1,0 +1,70 @@
+---
+title: Fake Store API
+description: API de tienda falsa para tu prototipo de e-commerce o sitio web de compras.
+template: splash
+hero:
+  tagline: Tu API para tu prototipo de e-commerce o sitio web de compras.
+  image:
+    file: ../../assets/banner.png
+  actions:
+    - text: Ver Documentación
+      link: /en/about/introduction/
+      icon: right-arrow
+      variant: primary
+---
+
+import { Code } from 'astro/components';
+import { Card, CardGrid } from '@astrojs/starlight/components';
+import CategoriesAPI from '../../components/PreviewAPI/CategoriesAPI.astro';
+import ProductsAPI from '../../components/PreviewAPI/ProductsAPI.astro';
+import UsersAPI from '../../components/PreviewAPI/UsersAPI.astro';
+
+<section class="section">
+  <h3>Obtener productos</h3>
+  <Code code="[GET] https://fake-store-api-409620.rj.r.appspot.com/api/products/all" lang="sh" />
+  <ProductsAPI />
+</section>
+<section class="section">
+  <div class="title">
+    <h3>Obtener categorías</h3>
+    <Code code="[GET] https://fake-store-api-409620.rj.r.appspot.com/api/categories/all" lang="sh" />
+  </div>
+  <div class="APIContainer">
+    <CategoriesAPI />
+  </div>
+</section>
+<section class="section">
+  <div class="title">
+    <h3>Obtener usuarios</h3>
+    <Code code="[GET] https://fake-store-api-409620.rj.r.appspot.com/api/users/all" lang="sh" />
+  </div>
+  <div class="APIContainer">
+    <UsersAPI />
+  </div>
+</section>
+
+## Features
+
+<CardGrid stagger>
+	<Card title="Todas las Operaciones CRUD" icon="pencil">
+		Aprovecha nuestra API para realizar sin limitaciones todas las operaciones CRUD (Crear, Leer, Actualizar y Eliminar).
+    </Card>
+	<Card title="Paginación" icon="document">
+		Soporta paginación a través de los métodos 'size' y 'limit', permitiendo características como el desplazamiento infinito.
+	</Card>
+	<Card title="Auth con JWT" icon="setting">
+		Utiliza JWT para tokens de acceso y actualización, y prueba de manera segura los endpoints con este método de autenticación.
+	</Card>
+	<Card title="Filtros" icon="magnifier">
+		Filtra productos por precio, título y categoría, lo que permite la creación de interfaces de usuario sofisticadas basadas en estos criterios.
+	</Card>
+  <Card title="Rest API" icon="star">
+		La API emplea la arquitectura API Rest, la estructura más ampliamente adoptada en la industria.
+	</Card>
+  <Card title="Postam e Insomia" icon="random">
+		Se proporciona archivos para ambos, Postman e Insomnia, permitiéndote probar fácilmente cada endpoint.
+	</Card>
+    <Card title="Imágenes con Inteligencia Artificial" icon="sun">
+		Las imágenes son creadas utilizando inteligencia artificial para asegurar que tus proyectos tengan un aspecto muy profesional.
+	</Card>
+</CardGrid>

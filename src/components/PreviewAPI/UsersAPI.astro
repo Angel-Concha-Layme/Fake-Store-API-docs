@@ -1,0 +1,19 @@
+---
+import type { User } from '@models/index';
+const API = 'https://fake-store-api-409620.rj.r.appspot.com/api/users/all';
+const response = await fetch(API);
+const responseData = await response.json();
+const data = responseData.content.map((item: User) => ({
+  ...item
+}));
+---
+<div class='grid grid-5 not-content'>
+	{data.map((item: User) => (
+    <article>
+      <img loading="lazy" src={item.avatar} alt="user" />
+      <p>{item.email}</p>
+      <p>{item.role}</p>
+    </article>
+  ))}
+</div>
+
