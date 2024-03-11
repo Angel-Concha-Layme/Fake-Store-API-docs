@@ -1,6 +1,6 @@
 ---
 import type { Product } from '@models/index';
-const API = 'https://fake-store-api-409620.rj.r.appspot.com/api/products/all?size=10';
+const API = 'https://fake-store-api-2no73ornoa-uc.a.run.app/api/products/all?size=10';
 const response = await fetch(API);
 const responseData = await response.json();
 const data = responseData.content.map((item: Product) => ({

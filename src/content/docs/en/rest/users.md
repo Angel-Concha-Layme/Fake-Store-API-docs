@@ -10,7 +10,7 @@ Puedes acceder a la lista de 3 usuarios usando el endpoint `/users/all`.
 Request:
 
 ```sh
-[GET] https://fake-store-api-409620.rj.r.appspot.com/api/users/all
+[GET] https://fake-store-api-2no73ornoa-uc.a.run.app/api/users/all
 ```
 
 Response:
@@ -63,7 +63,7 @@ Puedes obtener un usuario por su `id` usando el endpoint `/users/{id}`
 Request:
 
 ```sh
-[GET] https://fake-store-api-409620.rj.r.appspot.com/api/users/1
+[GET] https://fake-store-api-2no73ornoa-uc.a.run.app/api/users/1
 ```
 
 Response:
@@ -86,7 +86,7 @@ Puedes crear un nuevo usuario enviando un objeto como el siguiente a `/users/cre
 Request:
 
 ```sh
-[POST] https://fake-store-api-409620.rj.r.appspot.com/api/users/create
+[POST] https://fake-store-api-2no73ornoa-uc.a.run.app/api/users/create
 # Body
 {
   "username": "Tomas",
@@ -119,7 +119,7 @@ Puedes actualizar un usuario enviando un objeto como el siguiente y agregando el
 Request:
 
 ```sh
-[PUT] https://fake-store-api-409620.rj.r.appspot.com/api/users/1
+[PUT] https://fake-store-api-2no73ornoa-uc.a.run.app/api/users/1
 # Body
 {
   "username": "Angel",
@@ -149,7 +149,7 @@ Puedes verificar si un correo electrónico ya está registrado en la API.
 Request:
 
 ```sh
-[POST] https://fake-store-api-409620.rj.r.appspot.com/api/users/is-available
+[POST] https://fake-store-api-2no73ornoa-uc.a.run.app/api/users/is-available
 # Body
 {
   "email": "Rigoberto@mail.com"

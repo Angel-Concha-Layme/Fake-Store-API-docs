@@ -10,7 +10,7 @@ Para crear un pedido debes enviar un objeto como el siguiente a `/orders/create`
 Request:
 
 ```sh
-[POST] https://fake-store-api-409620.rj.r.appspot.com/api/orders/create
+[POST] https://fake-store-api-2no73ornoa-uc.a.run.app/api/orders/create
 
 # Body
 {
@@ -51,7 +51,7 @@ Response:
 Para obtener un pedido debes enviar el id del pedido a `/orders/{orderId}`
 
 ```sh
-[GET] https://fake-store-api-409620.rj.r.appspot.com/api/orders/1
+[GET] https://fake-store-api-2no73ornoa-uc.a.run.app/api/orders/1
 ```
 
 > Solo los usuarios autenticados (con un JWT válido) pueden obtener su pedido.
@@ -78,7 +78,7 @@ Response:
 Para obtener todos los pedidos de un usuario debes enviar el id del usuario a `/orders/all`
 
 ```sh
-[GET] https://fake-store-api-409620.rj.r.appspot.com/api/orders/all
+[GET] https://fake-store-api-2no73ornoa-uc.a.run.app/api/orders/all
 ```
 
 > Solo los usuarios autenticados (con un JWT válido) pueden obtener sus pedidos.
@@ -143,7 +143,7 @@ Response:
 Para cancelar un pedido debes enviar el id del pedido a `/orders/cancel/{orderId}`
 
 ```sh
-[PUT] https://fake-store-api-409620.rj.r.appspot.com/api/orders/cancel/1
+[PUT] https://fake-store-api-2no73ornoa-uc.a.run.app/api/orders/cancel/1
 ```
 
 > Solo los usuarios autenticados (con un JWT válido) pueden cancelar su pedido.
@@ -170,7 +170,7 @@ Response:
 Para retomar un pedido debes enviar el id del pedido a `/orders/retain/{orderId}`
 
 ```sh
-[PUT] https://fake-store-api-409620.rj.r.appspot.com/api/orders/retain/1
+[PUT] https://fake-store-api-2no73ornoa-uc.a.run.app/api/orders/retain/1
 ```
 
 > Solo los usuarios autenticados (con un JWT válido) pueden retomar su pedido.
@@ -197,7 +197,7 @@ Response:
 Para completar un pedido debes enviar el id del pedido a `/orders/complete/{orderId}`
 
 ```sh
-[PUT] https://fake-store-api-409620.rj.r.appspot.com/api/orders/complete/1
+[PUT] https://fake-store-api-2no73ornoa-uc.a.run.app/api/orders/complete/1
 ```
 
 > Solo los usuarios autenticados (con un JWT válido) pueden completar su pedido.

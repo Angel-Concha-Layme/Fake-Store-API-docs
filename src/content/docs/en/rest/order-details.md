@@ -8,7 +8,7 @@ description: Endpoints para obtener los detalles de un pedido
 Para obtener los detalles de un pedido debes enviar el id del pedido a `/orders-details/all/{orderId}`
 
 ```sh
-[GET] https://fake-store-api-409620.rj.r.appspot.com/api/orders-details/all/1
+[GET] https://fake-store-api-2no73ornoa-uc.a.run.app/api/orders-details/all/1
 ```
 
 Response:
@@ -37,7 +37,7 @@ Response:
 Para actualizar los detalles de un pedido debes enviar un objeto como el siguiente a `/orders-details/{orderDetailId}`
 
 ```sh
-[PUT] https://fake-store-api-409620.rj.r.appspot.com/api/orders-details/1
+[PUT] https://fake-store-api-2no73ornoa-uc.a.run.app/api/orders-details/1
 
 # Body
 {
@@ -71,7 +71,7 @@ Response:
 > Una vez hecho este cambio, los detalles del pedido se actualizarán y se podrá obtener los detalles del pedido actualizado.
 
 ```sh
-[GET] https://fake-store-api-409620.rj.r.appspot.com/api/orders-details/all/1
+[GET] https://fake-store-api-2no73ornoa-uc.a.run.app/api/orders-details/all/1
 ```
 
 Response:
@@ -111,7 +111,7 @@ Response:
 > Después de actualizar los detalles del pedido tenemos:
 
 ```sh
-GET https://fake-store-api-409620.rj.r.appspot.com/api/orders/1
+GET https://fake-store-api-2no73ornoa-uc.a.run.app/api/orders/1
 ```
 
 ```sh

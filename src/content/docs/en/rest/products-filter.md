@@ -12,7 +12,7 @@ Usando el endpoint `/products/all` y pasando `name` como parámetro de consulta,
 Request:
 
 ```sh
-[GET] https://fake-store-api-409620.rj.r.appspot.com/api/products/all?name=Generic
+[GET] https://fake-store-api-2no73ornoa-uc.a.run.app/api/products/all?name=Generic
 ```
 
 Response:
@@ -69,7 +69,7 @@ Usando el endpoint `/products/all` y pasando `priceMin` y `priceMax` como parám
 Request:
 
 ```sh
-[GET] https://fake-store-api-409620.rj.r.appspot.com/api/products/all?priceMin=900&priceMax=1500
+[GET] https://fake-store-api-2no73ornoa-uc.a.run.app/api/products/all?priceMin=900&priceMax=1500
 ```
 
 Response:
@@ -129,7 +129,7 @@ Usando el endpoint `/products/all` y pasando `categoryId` como parámetro de con
 Request:
 
 ```sh
-[GET] https://fake-store-api-409620.rj.r.appspot.com/api/products/all?categoryId=2
+[GET] https://fake-store-api-2no73ornoa-uc.a.run.app/api/products/all?categoryId=2
 ```
 
 > **Nota:** Puedes encontrar el id de cada categoría en el endpoint `/categories/all`.
@@ -191,7 +191,7 @@ Ejemplo: Todos los productos con un precio entre `900` y `1300`, con el título 
 > Se reemplaza `Generic` por `Apple` para mostrar una request con resultados.
 
 ```sh
-[GET] https://fake-store-api-409620.rj.r.appspot.com/api/products/all?title=Generic&priceMin=900&priceMax=1300&categoryId=1
+[GET] https://fake-store-api-2no73ornoa-uc.a.run.app/api/products/all?title=Generic&priceMin=900&priceMax=1300&categoryId=1
 ```
 
 
@@ -245,7 +245,7 @@ Ejemplo: Todos los productos con un precio entre `500` y `2000`, con el id de ca
 
 
 ```sh
-[GET] https://fake-store-api-409620.rj.r.appspot.com/api/products/all?size=2&priceMin=500&priceMax=2000&categoryId=1&page=1
+[GET] https://fake-store-api-2no73ornoa-uc.a.run.app/api/products/all?size=2&priceMin=500&priceMax=2000&categoryId=1&page=1
 ```
 
 Response:

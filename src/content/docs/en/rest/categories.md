@@ -10,7 +10,7 @@ Puedes acceder a la lista de 5 categorías usando el endpoint `/categories/all`.
 Request:
 
 ```
-[GET] https://fake-store-api-409620.rj.r.appspot.com/api/categories/all
+[GET] https://fake-store-api-2no73ornoa-uc.a.run.app/api/categories/all
 ```
 
 Response:
@@ -69,7 +69,7 @@ Puedes obtener una categoría por su `id` usando el endpoint `/categories/{id}`
 Request:
 
 ```sh
-[GET] https://fake-store-api-409620.rj.r.appspot.com/api/categories/5
+[GET] https://fake-store-api-2no73ornoa-uc.a.run.app/api/categories/5
 ```
 
 Response:
@@ -90,7 +90,7 @@ Puedes crear una nueva categoría enviando un objeto como el siguiente a `/categ
 Request:
 
 ```sh
-[POST] https://fake-store-api-409620.rj.r.appspot.com/api/categories/create
+[POST] https://fake-store-api-2no73ornoa-uc.a.run.app/api/categories/create
 # Body
 {
   "name": "Salud y Belleza",
@@ -118,7 +118,7 @@ Puedes editar una categoría existente enviando un objeto como el siguiente a `/
 Request:
 
 ```sh
-[DELETE] https://fake-store-api-409620.rj.r.appspot.com/api/categories/5
+[DELETE] https://fake-store-api-2no73ornoa-uc.a.run.app/api/categories/5
 ```
 
 Response:

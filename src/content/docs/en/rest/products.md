@@ -10,7 +10,7 @@ Puedes acceder a la lista de 50 productos usando el endpoint `/products`.
 Request:
 
 ```sh
-[GET] https://fake-store-api-409620.rj.r.appspot.com/api/products/all
+[GET] https://fake-store-api-2no73ornoa-uc.a.run.app/api/products/all
 ```
 
 Response:
@@ -66,7 +66,7 @@ Puedes obtener un producto usando el endpoint `products/<id>`.
 Request:
 
 ```sh
-[GET] https://fake-store-api-409620.rj.r.appspot.com/api/products/4
+[GET] https://fake-store-api-2no73ornoa-uc.a.run.app/api/products/4
 ```
 
 Response:
@@ -92,7 +92,7 @@ Puedes crear un nuevo producto enviando un objeto como el siguiente a `/products
 Request:
 
 ```sh
-[POST] https://fake-store-api-409620.rj.r.appspot.com/api/products/create
+[POST] https://fake-store-api-2no73ornoa-uc.a.run.app/api/products/create
 # Body
 {
   "name": "Portátil Apple MacBook Pro",
@@ -129,7 +129,7 @@ Puedes actualizar un producto enviando un objeto como el siguiente y agregando e
 Request:
 
 ```sh
-[PUT] https://fake-store-api-409620.rj.r.appspot.com/api/products/update/50
+[PUT] https://fake-store-api-2no73ornoa-uc.a.run.app/api/products/update/50
 # Body
 {
   "name": "Altavoz Bluetooth Portátil",
@@ -165,7 +165,7 @@ Puedes eliminar un producto agregando el `id` como parámetro: `/products/delete
 Request:
 
 ```sh
-[DELETE] https://fake-store-api-409620.rj.r.appspot.com/api/products/delete/50
+[DELETE] https://fake-store-api-2no73ornoa-uc.a.run.app/api/products/delete/50
 ```
 
 Response:
@@ -191,7 +191,7 @@ La respuesta también indica si la página actual es la primera (`first`) o la �
 Request:
 
 ```sh
-[GET] https://fake-store-api-409620.rj.r.appspot.com/api/products/all?size=2&page=1
+[GET] https://fake-store-api-2no73ornoa-uc.a.run.app/api/products/all?size=2&page=1
 ```
 
 Response:
@@ -255,9 +255,9 @@ Response:
 Para obtener una lista de productos paginada, se deben proporcionar los parámetros `page` y `size` en la URL. Por ejemplo, para obtener las primeras 3 paginas de 10 productos cada una, se debe hacer lo siguiente:
 
 ```bash
-[GET]  https://fake-store-api-409620.rj.r.appspot.com/api/products/all?page=0&size=10
-[GET]  https://fake-store-api-409620.rj.r.appspot.com/api/products/all?page=1&size=10
-[GET]  https://fake-store-api-409620.rj.r.appspot.com/api/products/all?page=2&size=10
+[GET]  https://fake-store-api-2no73ornoa-uc.a.run.app/api/products/all?page=0&size=10
+[GET]  https://fake-store-api-2no73ornoa-uc.a.run.app/api/products/all?page=1&size=10
+[GET]  https://fake-store-api-2no73ornoa-uc.a.run.app/api/products/all?page=2&size=10
 ```
 
 | Request                          | Descripción                        |
@@ -279,7 +279,7 @@ Y para obtener los primeros 20 productos, se debe hacer lo siguiente:
 La ordenación se puede aplicar a los resultados de la API mediante el parámetro `sort` en la URL. Por ejemplo, para obtener los primeros 10 productos ordenados por nombre, se debe hacer lo siguiente:
 
 ```bash
-[GET]  https://fake-store-api-409620.rj.r.appspot.com/api/products/all?page=0&size=10&sort=name
+[GET]  https://fake-store-api-2no73ornoa-uc.a.run.app/api/products/all?page=0&size=10&sort=name
 ```
 
 | Request                                    | Descripción                                              |
@@ -291,7 +291,7 @@ La ordenación se puede aplicar a los resultados de la API mediante el parámetr
 La ordenación también se puede aplicar en orden descendente agregando `desc` al parámetro `sort`. Por ejemplo, para obtener los primeros 10 productos ordenados por nombre en orden descendente, se debe hacer lo siguiente:
 
 ```bash
-[GET]  https://fake-store-api-409620.rj.r.appspot.com/api/products/all?page=0&size=10&sort=name,desc
+[GET]  https://fake-store-api-2no73ornoa-uc.a.run.app/api/products/all?page=0&size=10&sort=name,desc
 ```
 
 | Request                                         | Descripción                                                                   |
@@ -303,7 +303,7 @@ La ordenación también se puede aplicar en orden descendente agregando `desc` a
 La ordenación también se puede aplicar a múltiples campos. Por ejemplo, para obtener los primeros 10 productos ordenados por nombre y precio, se debe hacer lo siguiente:
 
 ```bash
-[GET]  https://fake-store-api-409620.rj.r.appspot.com/api/products/all?page=0&size=10&sort=name,price
+[GET]  https://fake-store-api-2no73ornoa-uc.a.run.app/api/products/all?page=0&size=10&sort=name,price
 ```
 
 | Request                                          | Descripción                                                       |
